@@ -1,0 +1,61 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url("https://i.pinimg.com/originals/ee/42/32/ee423250cbb250fb339a4f6be7684e37.gif");
+    background-size: cover;
+}
+
+.calc-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.calc-grid > button {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .75);
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-image: url('https://media1.tenor.com/images/e0af9b8aa6f1b835f58af1a8d593500b/tenor.gif?itemid=14828207');
+    background-size: cover;
+}
+
+.calc-grid > button:hover {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0,0,0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: rgba(255, 255, 255, .99);
+    font-size: 2.5rem;
+}
