@@ -24,14 +24,13 @@ body {
     cursor: pointer;
     color: rgba(255, 255, 255, .75);
     font-size: 2rem;
-    border: 1px solid white;
+    border: 1px solid rgba(255, 255, 255, .9);
     outline: none;
-    background-image: url('https://media1.tenor.com/images/e0af9b8aa6f1b835f58af1a8d593500b/tenor.gif?itemid=14828207');
-    background-size: cover;
+    background-color: rgba(0, 0, 0, .25);
 }
 
 .calc-grid > button:hover {
-    background-color: rgba(255, 255, 255, .9);
+    background-color: rgba(0, 0, 0, .65);
 }
 
 .span-two {
